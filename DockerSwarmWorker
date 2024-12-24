@@ -1,5 +1,5 @@
 #!/bin/bash
 HOSTNAME=$1
 sudo apt update && sudo apt -y install docker.io
-sudo apt -y install nfs-commons
+sudo apt -y install nfs-common
 sudo hostnamectl set-hostname HOSTNAME
