@@ -4,4 +4,5 @@ sudo apt update && sudo apt -y install docker.io
 sudo apt -y install nfs-common
 sudo hostnamectl set-hostname $HOSTNAME
 sudo docker swarm init
+sudo docker swarm join-token manager
 sudo docker network create --driver overlay --attachable overlay_net
