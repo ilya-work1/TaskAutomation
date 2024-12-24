@@ -1,0 +1,6 @@
+#!/bin/bash
+HOSTNAME=$1
+sudo apt update && sudo apt -y install docker.io
+sudo hostnamectl set-hostname HOSTNAME
+sudo docker swarm init
+sudo docker network create --driver overlay --attachable overlay_net
